@@ -12,13 +12,12 @@ const FilesPage = () => {
   const [message, setMessage] = useState('');
   const dispatch = useDispatch();
   const files = useSelector((state) => state.files);
-  const classes = useSelector((state) => state.classes); // Access classes from Redux state
+  const classes = useSelector((state) => state.classes); 
   const navigate = useNavigate();
 
   const token = localStorage.getItem('token');
 
   useEffect(() => {
-    // Fetch files and classes from backend
     const fetchFilesAndClasses = async () => {
       try {
         const [filesResponse, classesResponse] = await Promise.all([
@@ -30,7 +29,7 @@ const FilesPage = () => {
           }),
         ]);
         dispatch(setFiles(filesResponse.data.files));
-        dispatch(setClasses(classesResponse.data.classes)); // Set classes in Redux state
+        dispatch(setClasses(classesResponse.data.classes)); 
       } catch (error) {
         console.error('Error fetching data:', error.response?.data?.message || error.message);
       }
