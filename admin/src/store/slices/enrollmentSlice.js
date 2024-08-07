@@ -1,4 +1,3 @@
-// src/store/slices/enrollmentSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
 const enrollmentSlice = createSlice({

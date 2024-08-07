@@ -1,4 +1,3 @@
-// src/store/store.js
 import { configureStore } from '@reduxjs/toolkit';
 import classReducer from './slices/classSlice';
 import enrollmentReducer from './slices/enrollmentSlice';

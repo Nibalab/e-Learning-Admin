@@ -1,4 +1,3 @@
-// src/store/slices/withdrawalSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
 const withdrawalSlice = createSlice({

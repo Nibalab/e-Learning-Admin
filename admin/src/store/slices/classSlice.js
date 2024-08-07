@@ -1,4 +1,3 @@
-// src/store/slices/classSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
 const classSlice = createSlice({
@@ -6,10 +5,10 @@ const classSlice = createSlice({
   initialState: [],
   reducers: {
     addClass: (state, action) => {
-      state.push(action.payload);
+      state.push(action.payload); 
     },
     setClasses: (state, action) => {
-      return action.payload;
+      return action.payload; 
     },
   },
 });

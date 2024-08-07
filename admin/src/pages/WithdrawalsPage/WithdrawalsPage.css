@@ -1,0 +1,75 @@
+.withdrawals-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .withdrawals-container h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .back-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .withdrawals-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .withdrawals-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .withdrawals-list li strong {
+    color: #555;
+  }
+  
+  .withdrawals-list button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .withdrawals-list button:hover {
+    background-color: #218838;
+  }
+  
+  .withdrawals-list button:last-of-type {
+    background-color: #dc3545;
+  }
+  
+  .withdrawals-list button:last-of-type:hover {
+    background-color: #c82333;
+  }
+  

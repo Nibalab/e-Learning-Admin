@@ -1,4 +1,3 @@
-// src/pages/LoginPage/LoginPage.js
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { login as loginAction } from '../../store/slices/authSlice';
@@ -20,7 +19,7 @@ const LoginPage = () => {
         password,
       });
 
-      dispatch(loginAction(response.data.token)); // Dispatch login action with token
+      dispatch(loginAction(response.data.token)); 
       setMessage('Login successful!');
     } catch (error) {
       setMessage(error.response?.data?.message || 'Login failed');
